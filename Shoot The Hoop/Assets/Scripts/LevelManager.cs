@@ -14,12 +14,17 @@ public class LevelManager : MonoBehaviour {
 	
         // Update is called once per frame
 	
+
     void Update ()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
             LoadNextScene();
         }
+/*        else if(ScoreKeeper.score > 50)
+        {
+            LoadGameOverScene();
+        }*/
     }
 
     private static void LoadNextScene()
@@ -27,4 +32,11 @@ public class LevelManager : MonoBehaviour {
         int currentIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentIndex + 1);
     }
+
+/*    private static void LoadGameOverScene()
+    {
+        SceneManager.LoadScene("03_GameOver");
+        return;
+    }*/
+
 }
