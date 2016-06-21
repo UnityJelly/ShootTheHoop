@@ -6,7 +6,7 @@ using System.Collections;
 public class ScoreKeeper : MonoBehaviour {
 
     // Use this for initialization
-public static int score = 0;
+    public int score = 0;
 
 void Start () {
 	
