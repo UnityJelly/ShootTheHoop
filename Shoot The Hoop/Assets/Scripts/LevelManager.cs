@@ -27,16 +27,16 @@ public class LevelManager : MonoBehaviour {
         }*/
     }
 
-    private static void LoadNextScene()
+    public void LoadNextScene()
     {
         int currentIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentIndex + 1);
     }
 
-/*    private static void LoadGameOverScene()
+    public void LoadPreviousLevel()
     {
-        SceneManager.LoadScene("03_GameOver");
-        return;
-    }*/
+        int currentIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentIndex - 1);
+    }
 
 }
