@@ -5,6 +5,7 @@
 -r:"D:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll"
 -r:"D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll"
 -r:"D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll"
+-r:Assets/Plugins/Google.ProtocolBuffers.dll
 -r:"D:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll"
 -r:"D:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll"
 -r:"D:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Common.dll"
@@ -79,10 +80,10 @@
 -define:UNITY_EDITOR
 -define:UNITY_EDITOR_64
 -define:UNITY_EDITOR_WIN
-Assets/GameOverDisplay.cs
 Assets/Scripts/BallLauncher.cs
 Assets/Scripts/CameraRotation.cs
 Assets/Scripts/DetectScoring.cs
+Assets/Scripts/GameOverScoreDisplay.cs
 Assets/Scripts/LevelManager.cs
 Assets/Scripts/ScoreAbsorber.cs
 Assets/Scripts/ScoreDisplay.cs
