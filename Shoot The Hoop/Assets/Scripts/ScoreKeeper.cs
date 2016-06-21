@@ -9,7 +9,7 @@ public class ScoreKeeper : MonoBehaviour {
     public int score = 0;
 
 void Start () {
-	
+        DontDestroyOnLoad(gameObject);
 	}
 	
 	
